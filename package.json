@@ -9,24 +9,24 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
     "strapi": "3.6.8",
     "strapi-admin": "3.6.8",
-    "strapi-utils": "3.6.8",
-    "strapi-plugin-content-type-builder": "3.6.8",
+    "strapi-connector-mongoose": "3.6.8",
     "strapi-plugin-content-manager": "3.6.8",
-    "strapi-plugin-users-permissions": "3.6.8",
+    "strapi-plugin-content-type-builder": "3.6.8",
     "strapi-plugin-email": "3.6.8",
-    "strapi-plugin-upload": "3.6.8",
     "strapi-plugin-i18n": "3.6.8",
-    "strapi-connector-mongoose": "3.6.8"
+    "strapi-plugin-upload": "3.6.8",
+    "strapi-plugin-users-permissions": "3.6.8",
+    "strapi-provider-upload-cloudinary": "^3.6.8",
+    "strapi-utils": "3.6.8"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "52f62825-8730-45d1-8516-c51a997d7f77"
+    "uuid": "42e5d667-cbf2-4574-ab93-c09af359f23f"
   },
   "engines": {
     "node": ">=10.16.0 <=14.x.x",
