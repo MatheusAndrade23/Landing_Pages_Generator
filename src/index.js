@@ -15,7 +15,7 @@ app.use(cors());
 
 dotenv.config();
 
-//-- Express para ler JSON --//
+//-- Express Config --//
 
 app.use(
   express.urlencoded({
