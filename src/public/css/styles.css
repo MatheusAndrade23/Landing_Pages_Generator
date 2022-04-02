@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html, body {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0a1128;
+}
+header a {
+  margin-left: 20px;
+  color: #dc143c;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+}
+header nav {
+  margin-right: 20px;
+}
+header nav a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+header nav .nav-link {
+  position: relative;
+  padding: 5px;
+}
+header nav .nav-link::after {
+  width: 0%;
+  height: 2px;
+  content: " ";
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  border-radius: 10px;
+  transition: all 150ms ease;
+  background-color: #dc143c;
+}
+header nav .nav-link:hover::after {
+  left: 0%;
+  width: 100%;
+}
+header nav .nav-button {
+  padding: 10px;
+  border: 1px solid #dc143c;
+  border-radius: 10px;
+}
+header nav .nav-button:hover {
+  background-color: #dc143c;
+  color: #0a1128;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0a1128;
+}
+footer img {
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+  transition: all 0.5s;
+}
+footer img:hover {
+  transform: scale(1.2);
+}
+
+.container {
+  width: 100%;
+  min-height: 500px;
+}
+
+.absolute {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #0a1128;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.absolute .container-login {
+  padding: 40px;
+  margin: 0 auto;
+  border: 2px solid #dc143c;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0a1128;
+}
+.absolute .container-login h2 {
+  color: #dc143c;
+  font-family: "Montserrat", sans-serif;
+}
+.absolute .container-login .inputs {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  width: 200px;
+}
+.absolute .container-login .inputs label {
+  margin: 5px 0;
+  color: #dc143c;
+}
+.absolute .container-login .inputs input {
+  border: 1px solid #dc143c;
+  border-radius: 5px;
+  padding: 5px;
+}
+.absolute .container-login .buttons {
+  display: flex;
+  flex-direction: row;
+}
+.absolute .container-login .buttons a {
+  color: #dc143c;
+  transition: 0.25s;
+}
+.absolute .container-login .buttons a:hover {
+  text-decoration: underline;
+}
+.absolute .container-login .buttons p {
+  color: #dc143c;
+  font-style: italic;
+  margin: 0 10px;
+}
+
+main {
+  min-height: 500px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */
