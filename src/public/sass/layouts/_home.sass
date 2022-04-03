@@ -4,6 +4,10 @@
   height: auto
   width: 100%
   min-height: variables.$min-height
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  align-items: center
 
   .default-pages
     width: 80%
@@ -16,18 +20,20 @@
     flex-direction: row
     flex-wrap: wrap
     align-items: center
-    justify-content: space-evenly
+    justify-content: space-between
 
     h2
       color: variables.$secondary-color
       font-weight: lighter
+      width: 250px
 
     .pages
+      width: 700px
       display: flex
       flex-direction: row
       flex-wrap: wrap
       align-items: center
-      justify-content: center
+      justify-content: space-between
 
       div
         margin: 0 20px
@@ -39,6 +45,7 @@
 
         span
           color: variables.$secondary-color
+          width: 145px
 
         label
           background: trasnparent no-repeat center center
@@ -54,7 +61,7 @@
           justify-content: center
           align-items: center
           top: 20%
-          right: -18px
+          left: -18px
 
           input[type=radio]
             all: unset
@@ -70,17 +77,18 @@
             clear: both
 
           input[type=radio]:checked
-            background: red
+            background: variables.$secondary-color
 
-    button
-      padding: 10px 20px
-      border: 1px solid variables.$secondary-color
-      border-radius: 10px
-      color: variables.$secondary-color
-      cursor: pointer
-      font-size: variables.$xsmall-font
-      background: transparent
+  button
+    margin: 20px auto
+    padding: 10px 20px
+    border: 1px solid variables.$secondary-color
+    border-radius: 10px
+    color: variables.$secondary-color
+    cursor: pointer
+    font-size: variables.$xsmall-font
+    background: transparent
 
-      &:hover
-        background-color: variables.$secondary-color
-        color: variables.$primary-color
+    &:hover
+      background-color: variables.$secondary-color
+      color: variables.$primary-color
