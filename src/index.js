@@ -2,6 +2,7 @@
 
 const express = require('express');
 const exphbs = require('express-handlebars');
+const session = require('express-session');
 const mongoose = require('mongoose');
 // const cloudinary = require('cloudinary').v2;
 const dotenv = require('dotenv');
@@ -17,6 +18,9 @@ app.use(express.static('public'));
 
 dotenv.config();
 
+//-- Rotas --//
+const pagesRoutes = require('./routes/pages');
+
 //-- Express Config --//
 
 app.use(
@@ -26,6 +30,17 @@ app.use(
 );
 
 app.use(express.json());
+
+//-- Express-Session Config  --//
+
+app.use(
+  session({
+    secret: process.env.SESSION_SECRET,
+    saveUninitialized: process.env.SESSION_SAVE_INITIALIZED,
+    resave: process.env.SESSION_RESAVE,
+    cookie: { maxAge: 600000 },
+  }),
+);
 
 //-- Conectar Mongoose --//
 
@@ -39,6 +54,7 @@ mongoose
   })
   .catch(function (err) {
     console.log(err.message);
+    console.log(process.env.DB_CONFIG);
   });
 
 //-- Configurar Cloudinary --//
@@ -50,11 +66,11 @@ mongoose
 //   secure: true,
 // });
 
-//-- Entregar uma  Porta --//
+//-- Rotas --//
 
-app.get('/', (req, res) => {
-  res.render('pages/Home');
-});
+app.use('/', pagesRoutes);
+
+//-- Entregar uma  Porta --//
 
 app.listen(process.env.PORT || 5000, () => {
   console.log('Aplicação Iniciada!');
