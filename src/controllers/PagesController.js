@@ -3,9 +3,10 @@ const User = require('../models/user');
 
 module.exports = class PagesController {
   static Login(req, res) {
-    try {
-      const user = User.findOne({ user: req.body.user });
-      if (!user) {
+    User.findOne({ user: req.body.user }, (error, user) => {
+      if (error) {
+        res.status(500).json({ message: error });
+      } else if (!user) {
         let NewUser = {
           user: req.body.user,
           password: req.body.password,
@@ -14,13 +15,13 @@ module.exports = class PagesController {
         Users.create(NewUser);
         req.session.login = req.body.user;
         res.status(201).redirect('/');
-      } else {
+      } else if (user.password === req.body.password) {
         req.session.login = req.body.user;
         res.status(200).redirect('/');
+      } else {
+        res.status(401).redirect('/');
       }
-    } catch (error) {
-      res.status(500).redirect('/');
-    }
+    });
   }
 
   static showHome(req, res) {
@@ -29,5 +30,9 @@ module.exports = class PagesController {
     } else {
       res.render('pages/Home');
     }
+  }
+
+  static notFound(req, res) {
+    res.redirect('/');
   }
 };
