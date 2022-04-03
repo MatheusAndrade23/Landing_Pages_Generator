@@ -1,6 +1,86 @@
 @use '../base/variables'
 
 .container
+  height: auto
   width: 100%
   min-height: variables.$min-height
 
+  .default-pages
+    width: 80%
+    padding: 20px
+    margin: 0 auto
+    border: 2px solid variables.$secondary-color
+    border-top: none
+
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-evenly
+
+    h2
+      color: variables.$secondary-color
+      font-weight: lighter
+
+    .pages
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      align-items: center
+      justify-content: center
+
+      div
+        margin: 0 20px
+
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        position: relative
+
+        span
+          color: variables.$secondary-color
+
+        label
+          background: trasnparent no-repeat center center
+          height: 15px
+          width: 15px
+          border: 1px solid variables.$secondary-color
+          border-radius: 50%
+          cursor: pointer
+          position: absolute
+          white-space: nowrap
+          text-indent: 100%
+          display: flex
+          justify-content: center
+          align-items: center
+          top: 20%
+          right: -18px
+
+          input[type=radio]
+            all: unset
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            border-radius: 50%
+
+          &::after
+            content: ""
+            clear: both
+
+          input[type=radio]:checked
+            background: red
+
+    button
+      padding: 10px 20px
+      border: 1px solid variables.$secondary-color
+      border-radius: 10px
+      color: variables.$secondary-color
+      cursor: pointer
+      font-size: variables.$xsmall-font
+      background: transparent
+
+      &:hover
+        background-color: variables.$secondary-color
+        color: variables.$primary-color

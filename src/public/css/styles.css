@@ -14,6 +14,10 @@ a {
   transition: all 0.5s;
 }
 
+button {
+  transition: all 0.5s;
+}
+
 input {
   border: none;
   outline: none;
@@ -30,6 +34,7 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: #0a1128;
+  border-bottom: 2px solid #dc143c;
 }
 header a {
   margin-left: 20px;
@@ -64,7 +69,7 @@ header nav .nav-link:hover::after {
   width: 100%;
 }
 header nav .nav-button {
-  padding: 10px;
+  padding: 10px 20px;
   border: 1px solid #dc143c;
   border-radius: 10px;
 }
@@ -92,8 +97,87 @@ footer img:hover {
 }
 
 .container {
+  height: auto;
   width: 100%;
   min-height: 500px;
+}
+.container .default-pages {
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  border: 2px solid #dc143c;
+  border-top: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.container .default-pages h2 {
+  color: #dc143c;
+  font-weight: lighter;
+}
+.container .default-pages .pages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.container .default-pages .pages div {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+}
+.container .default-pages .pages div span {
+  color: #dc143c;
+}
+.container .default-pages .pages div label {
+  background: trasnparent no-repeat center center;
+  height: 15px;
+  width: 15px;
+  border: 1px solid #dc143c;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  white-space: nowrap;
+  text-indent: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 20%;
+  right: -18px;
+}
+.container .default-pages .pages div label input[type=radio] {
+  all: unset;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
+.container .default-pages .pages div label::after {
+  content: "";
+  clear: both;
+}
+.container .default-pages .pages div label input[type=radio]:checked {
+  background: red;
+}
+.container .default-pages button {
+  padding: 10px 20px;
+  border: 1px solid #dc143c;
+  border-radius: 10px;
+  color: #dc143c;
+  cursor: pointer;
+  font-size: 15px;
+  background: transparent;
+}
+.container .default-pages button:hover {
+  background-color: #dc143c;
+  color: #0a1128;
 }
 
 .absolute {
@@ -156,6 +240,7 @@ footer img:hover {
 main {
   min-height: 500px;
   width: 100%;
+  background: #0a1128;
 }
 
 /*# sourceMappingURL=styles.css.map */
