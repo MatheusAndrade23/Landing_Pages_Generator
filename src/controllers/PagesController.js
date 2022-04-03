@@ -12,7 +12,7 @@ module.exports = class PagesController {
           password: req.body.password,
           pageSelected: 3,
         };
-        Users.create(NewUser);
+        User.create(NewUser);
         req.session.login = req.body.user;
         res.status(201).redirect('/');
       } else if (user.password === req.body.password) {
