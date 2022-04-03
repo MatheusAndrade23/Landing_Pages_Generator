@@ -100,6 +100,10 @@ footer img:hover {
   height: auto;
   width: 100%;
   min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .container .default-pages {
   width: 80%;
@@ -111,18 +115,20 @@ footer img:hover {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .container .default-pages h2 {
   color: #dc143c;
   font-weight: lighter;
+  width: 250px;
 }
 .container .default-pages .pages {
+  width: 700px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .container .default-pages .pages div {
   margin: 0 20px;
@@ -133,6 +139,7 @@ footer img:hover {
 }
 .container .default-pages .pages div span {
   color: #dc143c;
+  width: 145px;
 }
 .container .default-pages .pages div label {
   background: trasnparent no-repeat center center;
@@ -148,7 +155,7 @@ footer img:hover {
   justify-content: center;
   align-items: center;
   top: 20%;
-  right: -18px;
+  left: -18px;
 }
 .container .default-pages .pages div label input[type=radio] {
   all: unset;
@@ -164,9 +171,10 @@ footer img:hover {
   clear: both;
 }
 .container .default-pages .pages div label input[type=radio]:checked {
-  background: red;
+  background: #dc143c;
 }
-.container .default-pages button {
+.container button {
+  margin: 20px auto;
   padding: 10px 20px;
   border: 1px solid #dc143c;
   border-radius: 10px;
@@ -175,7 +183,7 @@ footer img:hover {
   font-size: 15px;
   background: transparent;
 }
-.container .default-pages button:hover {
+.container button:hover {
   background-color: #dc143c;
   color: #0a1128;
 }
@@ -224,11 +232,14 @@ footer img:hover {
   display: flex;
   flex-direction: row;
 }
-.absolute .container-login .buttons a {
+.absolute .container-login .buttons input {
   color: #dc143c;
   transition: 0.25s;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 18px;
 }
-.absolute .container-login .buttons a:hover {
+.absolute .container-login .buttons input:hover {
   text-decoration: underline;
 }
 .absolute .container-login .buttons p {
