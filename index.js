@@ -12,14 +12,15 @@ const app = express();
 
 app.engine('handlebars', exphbs.engine());
 app.set('view engine', 'handlebars');
+app.set('views', './src/views');
 app.use(cors());
 
-app.use(express.static('public'));
+app.use(express.static('./src/public'));
 
 dotenv.config();
 
 //-- Rotas --//
-const pagesRoutes = require('./routes/pages');
+const pagesRoutes = require('./src/routes/pages');
 
 //-- Express Config --//
 
