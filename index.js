@@ -54,7 +54,6 @@ mongoose
   })
   .catch(function (err) {
     console.log(err.message);
-    console.log(process.env.DB_CONFIG);
   });
 
 //-- Configurar Cloudinary --//
