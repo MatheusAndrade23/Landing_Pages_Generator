@@ -26,9 +26,9 @@ module.exports = class PagesController {
 
   static showHome(req, res) {
     if (!req.session.login) {
-      res.render('pages/login');
+      res.render('pages/login.handlebars');
     } else {
-      res.render('pages/home');
+      res.render('pages/home.handlebars');
     }
   }
 
