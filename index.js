@@ -12,11 +12,12 @@ const cors = require('cors');
 const app = express();
 
 app.set('views', path.join(__dirname, './src/views'));
+app.use(express.static(__dirname + '/public'));
 app.engine('handlebars', exphbs.engine());
 app.set('view engine', 'handlebars');
 app.use(cors());
 
-app.use(express.static('./src/public'));
+app.use(express.static(__dirname + './src/public'));
 
 dotenv.config();
 
