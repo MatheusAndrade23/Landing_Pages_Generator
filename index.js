@@ -17,7 +17,7 @@ app.engine('handlebars', exphbs.engine());
 app.set('view engine', 'handlebars');
 app.use(cors());
 
-app.use(express.static(__dirname + './src/public'));
+app.use(express.static('./src/public'));
 
 dotenv.config();
 
