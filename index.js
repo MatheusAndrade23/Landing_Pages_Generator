@@ -1,5 +1,6 @@
 //-- Configurações Iniciais --//
 
+const path = require('path');
 const express = require('express');
 const exphbs = require('express-handlebars');
 const session = require('express-session');
@@ -10,9 +11,9 @@ const cors = require('cors');
 
 const app = express();
 
+app.set('views', path.join(__dirname, './src/views'));
 app.engine('handlebars', exphbs.engine());
 app.set('view engine', 'handlebars');
-app.set('views', './src/views');
 app.use(cors());
 
 app.use(express.static('./src/public'));
