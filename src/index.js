@@ -11,18 +11,20 @@ const cors = require('cors');
 
 const app = express();
 
-app.set('views', path.join(__dirname, './src/views'));
-app.use(express.static(__dirname + '/public'));
+const hbs = exphbs.create({
+  partialsDir: ['/views/partials'],
+});
+
+app.set('views', path.join(__dirname, '/views'));
+app.use(express.static('public'));
 app.engine('handlebars', exphbs.engine());
 app.set('view engine', 'handlebars');
 app.use(cors());
 
-app.use(express.static('./src/public'));
-
 dotenv.config();
 
 //-- Rotas --//
-const pagesRoutes = require('./src/routes/pages');
+const Routes = require('./routes/defaultRoutes');
 
 //-- Express Config --//
 
@@ -70,7 +72,7 @@ mongoose
 
 //-- Rotas --//
 
-app.use('/', pagesRoutes);
+app.use('/', Routes);
 
 //-- Entregar uma  Porta --//
 
