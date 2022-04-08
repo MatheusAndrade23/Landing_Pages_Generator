@@ -12,12 +12,12 @@ const cors = require('cors');
 const app = express();
 
 const hbs = exphbs.create({
-  partialsDir: ['/views/partials'],
+  partialsDir: ['/views/layouts'],
 });
 
+app.engine('handlebars', hbs.engine);
 app.set('views', path.join(__dirname, '/views'));
 app.use(express.static('public'));
-app.engine('handlebars', exphbs.engine());
 app.set('view engine', 'handlebars');
 app.use(cors());
 
