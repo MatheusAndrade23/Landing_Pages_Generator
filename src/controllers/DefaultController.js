@@ -44,7 +44,7 @@ module.exports = class DefaultController {
       res.render('pages/register');
     } else if (req.method === 'POST') {
       if (!req.body.user || !req.body.password) {
-        res.redirect('/register');
+        res.status(406).redirect('/register');
       } else {
         User.findOne({ user: req.body.user }, (error, user) => {
           if (error) {

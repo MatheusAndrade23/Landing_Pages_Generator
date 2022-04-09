@@ -1,7 +1,14 @@
 const express = require('express');
 const router = express.Router();
 
+const LoginApiController = require('../controllers/LoginApiController');
 const DefaultController = require('../controllers/DefaultController');
+const ApiController = require('../controllers/ApiController');
+
+router.get('/landing-pages', ApiController.LandingPages);
+
+router.post('/register-api', LoginApiController.Register);
+router.post('/login-api', LoginApiController.Login);
 
 router.post('/register', DefaultController.Register);
 router.get('/register', DefaultController.Register);
@@ -11,7 +18,6 @@ router.get('/login', DefaultController.Login);
 
 router.get('/:strange', DefaultController.NotFound);
 
-router.post('/', DefaultController.Login);
 router.get('/', DefaultController.ShowHome);
 
 module.exports = router;
