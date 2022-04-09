@@ -188,7 +188,7 @@ footer img:hover {
   color: #0a1128;
 }
 
-.absolute {
+.container-form {
   width: 100%;
   height: 100%;
   background-color: #0a1128;
@@ -196,8 +196,9 @@ footer img:hover {
   align-items: center;
   justify-content: center;
 }
-.absolute .container-login {
-  padding: 40px;
+.container-form .form-login {
+  width: 300px;
+  padding: 40px 0;
   margin: 0 auto;
   border: 2px solid #dc143c;
   border-radius: 15px;
@@ -207,33 +208,94 @@ footer img:hover {
   justify-content: center;
   background-color: #0a1128;
 }
-.absolute .container-login h2 {
+.container-form .form-login h2 {
   color: #dc143c;
   font-family: "Montserrat", sans-serif;
 }
-.absolute .container-login .inputs {
+.container-form .form-login .inputs {
   display: flex;
   flex-direction: column;
   margin: 15px 0;
   width: 200px;
 }
-.absolute .container-login .inputs label {
+.container-form .form-login .inputs label {
   margin: 5px 0;
   color: #dc143c;
 }
-.absolute .container-login .inputs input {
+.container-form .form-login .inputs input {
   border: 1px solid #dc143c;
   border-radius: 5px;
   padding: 5px;
 }
-.absolute .container-login .buttons {
+.container-form .form-login .buttons {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-form .form-login .buttons input {
+  border: 1px solid #dc143c;
+  border-radius: 5px;
+  background: transparent;
+  color: #dc143c;
+  font-size: 15px;
+  padding: 5px 30px;
+  transition: 0.5s;
+}
+.container-form .form-login .buttons input:hover {
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.container-form .form-login .buttons p {
+  color: #dc143c;
+  font-size: 15px;
+  font-style: italic;
+}
+.container-form .form-login .buttons .otherAction {
+  display: flex;
+  flex-direction: row;
+}
+.container-form .form-login .buttons .otherAction p {
+  font-style: normal;
+}
+.container-form .form-login .buttons .otherAction a {
+  color: #dc143c;
+  font-size: 15px;
+  margin-left: 5px;
+  font-style: italic;
+}
+.container-form .form-login .buttons .otherAction a:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 main {
   min-height: 500px;
   width: 100%;
   background: #0a1128;
+}
+
+.container-404 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container-404 h1 {
+  color: #dc143c;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.container-404 a {
+  color: #dc143c;
+  font-style: italic;
+}
+.container-404 a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=styles.css.map */
