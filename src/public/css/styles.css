@@ -239,7 +239,8 @@ footer img:hover {
   background: transparent;
   color: #dc143c;
   font-size: 15px;
-  padding: 5px 30px;
+  height: 30px;
+  width: 160px;
   transition: 0.5s;
 }
 .container-form .form-login .buttons input:hover {
