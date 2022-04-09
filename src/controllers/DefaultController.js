@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const User = require('../models/user');
 
-module.exports = class PagesController {
+module.exports = class DefaultController {
   static ShowFormRegister(req, res) {
     res.render('pages/register');
   }
@@ -14,7 +14,7 @@ module.exports = class PagesController {
 
   static Login(req, res) {}
 
-  static showHome(req, res) {
+  static ShowHome(req, res) {
     if (!req.session.login) {
       res.redirect('/login');
     } else {
@@ -22,7 +22,7 @@ module.exports = class PagesController {
     }
   }
 
-  static notFound(req, res) {
+  static NotFound(req, res) {
     res.render('pages/notFound');
   }
 };

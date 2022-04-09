@@ -1,17 +1,17 @@
 const express = require('express');
 const router = express.Router();
 
-const PagesController = require('../controllers/PagesController');
+const DefaultController = require('../controllers/DefaultController');
 
-router.post('/register', PagesController.Register);
-router.get('/register', PagesController.ShowFormRegister);
+router.post('/register', DefaultController.Register);
+router.get('/register', DefaultController.ShowFormRegister);
 
-router.post('/login', PagesController.Login);
-router.get('/login', PagesController.ShowFormLogin);
+router.post('/login', DefaultController.Login);
+router.get('/login', DefaultController.ShowFormLogin);
 
-router.post('/', PagesController.Login);
-router.get('/', PagesController.showHome);
+router.post('/', DefaultController.Login);
+router.get('/', DefaultController.ShowHome);
 
-router.get('/:strange-slug', PagesController.notFound);
+router.get('/:strange-slug', DefaultController.NotFound);
 
 module.exports = router;
