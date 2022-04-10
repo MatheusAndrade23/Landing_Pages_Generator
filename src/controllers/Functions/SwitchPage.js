@@ -1,3 +1,5 @@
+import mockPage from '../../pages/mock.json'
+
 const SwitchPage = (pageSelected) => {
   switch (pageSelected) {
     case 1:
@@ -9,7 +11,7 @@ const SwitchPage = (pageSelected) => {
       break;
 
     case 3:
-      return (page = {});
+      return (page = ...mockPage);
       break;
 
     case 4:
