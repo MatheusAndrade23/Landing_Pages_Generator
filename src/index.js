@@ -40,9 +40,14 @@ app.use(express.json());
 app.use(
   session({
     secret: process.env.SESSION_SECRET,
-    saveUninitialized: process.env.SESSION_SAVE_INITIALIZED,
-    resave: process.env.SESSION_RESAVE,
-    cookie: { maxAge: 600000 },
+    saveUninitialized: false,
+    resave: false,
+    cookie: {
+      secure: false,
+      maxAge: 3600000,
+      expires: new Date(Date.now() + 3600000),
+      httpOnly: true,
+    },
   }),
 );
 
@@ -52,10 +57,10 @@ mongoose
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then(function () {
+  .then(() => {
     console.log('Conectado com MongoDB Atlas!');
   })
-  .catch(function (err) {
+  .catch((err) => {
     console.log(err.message);
   });
 
