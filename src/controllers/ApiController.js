@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const User = require('../models/user');
 
+const mockPage = require('../pages/mock.json');
+
 module.exports = class LoginApiController {
   static LandingPages(req, res) {
     if (!req.body.user || !req.body.password) {
@@ -41,7 +43,7 @@ const SwitchPage = (pageSelected) => {
       break;
 
     case 3:
-      return (page = {});
+      return (page = { ...mockPage });
       break;
 
     case 4:
