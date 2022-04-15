@@ -1,25 +1,25 @@
 {{> header}}
 
-<div class='container'>
+<form class='container' method="POST" action="/apply-page">
   <div class='default-pages'>
     <h2>Páginas Padrão 1</h2>
     <div class='pages'>
       <div>
         <span>News Page</span>
         <label>
-          <input type='radio' name='default-pages' id='default1' />
+          <input type='radio' name='defaultPage' value='1' />
         </label>
       </div>
       <div>
         <span>E-Commerce Page</span>
         <label>
-          <input type='radio' name='default-pages' id='default2' />
+          <input type='radio' name='defaultPage' value='2' />
         </label>
       </div>
       <div>
         <span>Mock Page</span>
         <label>
-          <input type='radio' name='default-pages' id='default3' />
+          <input type='radio' name='defaultPage' value='3' />
         </label>
       </div>
     </div>
@@ -30,19 +30,19 @@
       <div>
         <span>Blog Page</span>
         <label>
-          <input type='radio' name='default-pages' id='default4' />
+          <input type='radio' name='defaultPage' value='4' />
         </label>
       </div>
       <div>
         <span>Recipes Page</span>
         <label>
-          <input type='radio' name='default-pages' id='default5' />
+          <input type='radio' name='defaultPage' value='5' />
         </label>
       </div>
       <div>
         <span>Gallery Page</span>
         <label>
-          <input type='radio' name='default-pages' id='default6' />
+          <input type='radio' name='defaultPage' value='6' />
         </label>
       </div>
     </div>
@@ -53,24 +53,24 @@
       <div>
         <span>Guia Html</span>
         <label>
-          <input type='radio' name='default-pages' id='default7' />
+          <input type='radio' name='defaultPage' value='7' />
         </label>
       </div>
       <div>
         <span>Guia CSS</span>
         <label>
-          <input type='radio' name='default-pages' id='default8' />
+          <input type='radio' name='defaultPage' value='8' />
         </label>
       </div>
       <div>
         <span>Guia Node</span>
         <label>
-          <input type='radio' name='default-pages' id='default9' />
+          <input type='radio' name='defaultPage' value='9' />
         </label>
       </div>
     </div>
   </div>
-  <button id='apply'>Aplicar</button>
-</div>
+  <input type="submit" id='apply' value="Aplicar">
+</form>
 
 {{> footer}}
