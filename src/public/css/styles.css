@@ -173,7 +173,7 @@ footer img:hover {
 .container .default-pages .pages div label input[type=radio]:checked {
   background: #dc143c;
 }
-.container button {
+.container #apply {
   margin: 20px auto;
   padding: 10px 20px;
   border: 1px solid #dc143c;
@@ -183,7 +183,7 @@ footer img:hover {
   font-size: 15px;
   background: transparent;
 }
-.container button:hover {
+.container #apply:hover {
   background-color: #dc143c;
   color: #0a1128;
 }

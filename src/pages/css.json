@@ -1,0 +1,81 @@
+[
+  {
+    "footer_text": "<p>FlexBox Guide of Landing Pages Generator - Matheus</p>",
+    "slug": "landing-page",
+    "title": "Landing Page",
+    "sections": [
+      {
+        "__component": "section.section-two-columns",
+        "title": "FlexBox Guide",
+        "description": "Our comprehensive guide to CSS FlexBox layout. This complete guide explains everything about flexbox, focusing on all the different possible properties for the parent element (the flex container) and the child elements (the flex items). It also includes history, demos, patterns, and a browser support chart.",
+        "metadata": {
+          "background": true,
+          "section_id": "intro"
+        },
+        "image": {
+          "url": "https://res.cloudinary.com/dlizakp2a/image/upload/v1613749289/javascript_b57bf48cda.svg"
+        }
+      },
+      {
+        "__component": "section.section-grid",
+        "description": "Main Info",
+        "title": "Align and Justify things right now!",
+        "text_grid": [
+          {
+            "title": "Display",
+            "description": "This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children."
+          },
+          {
+            "title": "Flex-Direction",
+            "description": "This establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out either in horizontal rows or vertical columns."
+          },
+          {
+            "title": "Justify-Content",
+            "description": "This defines the alignment along the main axis. It helps distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line."
+          },
+          {
+            "title": "Align-Items",
+            "description": "This defines the default behavior for how flex items are laid out along the cross axis on the current line. Think of it as the justify-content version for the cross-axis (perpendicular to the main-axis)."
+          },
+          {
+            "title": "Align-Content",
+            "description": "This aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis."
+          },
+          {
+            "title": "Align-Self",
+            "description": "This allows the default alignment (or the one specified by align-items) to be overridden for individual flex items. Please see the align-items explanation to understand the available values."
+          },
+          {
+            "title": "Flex-Wrap",
+            "description": "By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property."
+          },
+          {
+            "title": "Flex-Grow",
+            "description": "This defines the ability for a flex item to grow if necessary. It accepts a unit less value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up. If all items have flex-grow set to 1, the remaining space in the container will be distributed equally to all children. If one of the children has a value of 2, that child would take up twice as much of the space either one of the others (or it will try, at least)."
+          },
+          {
+            "title": "Order",
+            "description": "By default, flex items are laid out in the source order. However, the order property controls the order in which they appear in the flex container."
+          }
+        ],
+        "metadata": {
+          "background": true,
+          "name": "Recipes Grid",
+          "section_id": "recipes-one"
+        }
+      }
+    ],
+    "menu": {
+      "open_in_new_tab": false,
+      "logo_text": "FlexBox Page",
+      "logo_link": "#home",
+      "menu": [
+        {
+          "open_in_new_tab": false,
+          "link_text": "Intro",
+          "url": "#intro"
+        }
+      ]
+    }
+  }
+]
