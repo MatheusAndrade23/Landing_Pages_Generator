@@ -1,0 +1,195 @@
+[
+  {
+    "footer_text": "<p>Gallery Page of Landing Pages Generator - Matheus</p>",
+    "slug": "landing-page",
+    "title": "Landing Page",
+    "sections": [
+      {
+        "__component": "section.section-two-columns",
+        "title": "Gallery Page",
+        "description": "This page shows some very beautiful images!",
+        "metadata": {
+          "background": true,
+          "section_id": "intro"
+        },
+        "image": {
+          "url": "https://res.cloudinary.com/dlizakp2a/image/upload/v1613749289/javascript_b57bf48cda.svg"
+        }
+      },
+      {
+        "__component": "section.section-grid",
+        "description": "First Gallery of the Page",
+        "title": "Gallery",
+        "text_grid": [],
+        "image_grid": [
+          {
+            "image": {
+              "alternativeText": "Beautiful background image",
+              "url": "http://source.unsplash.com/random/360x360?r=1"
+            }
+          },
+          {
+            "image": {
+              "alternativeText": "Beautiful background image",
+              "url": "http://source.unsplash.com/random/360x360?r=3"
+            }
+          },
+          {
+            "image": {
+              "alternativeText": "Beautiful background image",
+              "url": "http://source.unsplash.com/random/360x360?r=5"
+            }
+          },
+          {
+            "image": {
+              "alternativeText": "Beautiful background image",
+              "url": "http://source.unsplash.com/random/360x360?r=7"
+            }
+          },
+          {
+            "image": {
+              "alternativeText": "Beautiful background image",
+              "url": "http://source.unsplash.com/random/360x360?r=9"
+            }
+          },
+          {
+            "image": {
+              "alternativeText": "Beautiful background image",
+              "url": "http://source.unsplash.com/random/360x360?r=0"
+            }
+          }
+        ],
+        "metadata": {
+          "background": true,
+          "name": "gallery",
+          "section_id": "gallery1"
+        }
+      },
+      {
+        "__component": "section.section-grid",
+        "description": "Second Gallery of the Page",
+        "title": "Gallery 2",
+        "text_grid": [],
+        "image_grid": [
+          {
+            "image": {
+              "alternativeText": "Beautiful background image",
+              "url": "http://source.unsplash.com/random/360x360?r=1"
+            }
+          },
+          {
+            "image": {
+              "alternativeText": "Beautiful background image",
+              "url": "http://source.unsplash.com/random/360x360?r=2"
+            }
+          },
+          {
+            "image": {
+              "alternativeText": "Beautiful background image",
+              "url": "http://source.unsplash.com/random/360x360?r=3"
+            }
+          },
+          {
+            "image": {
+              "alternativeText": "Beautiful background image",
+              "url": "http://source.unsplash.com/random/360x360?r=4"
+            }
+          },
+          {
+            "image": {
+              "alternativeText": "Beautiful background image",
+              "url": "http://source.unsplash.com/random/360x360?r=5"
+            }
+          },
+          {
+            "image": {
+              "alternativeText": "Beautiful background image",
+              "url": "http://source.unsplash.com/random/360x360?r=6"
+            }
+          }
+        ],
+        "metadata": {
+          "background": true,
+          "name": "gallery2",
+          "section_id": "gallery2"
+        }
+      },
+      {
+        "__component": "section.section-grid",
+        "description": "Third Gallery of the Page",
+        "title": "Gallery 3",
+        "text_grid": [],
+        "image_grid": [
+          {
+            "image": {
+              "alternativeText": "Beautiful background image",
+              "url": "http://source.unsplash.com/random/360x360?r=1"
+            }
+          },
+          {
+            "image": {
+              "alternativeText": "Beautiful background image",
+              "url": "http://source.unsplash.com/random/360x360?r=2"
+            }
+          },
+          {
+            "image": {
+              "alternativeText": "Beautiful background image",
+              "url": "http://source.unsplash.com/random/360x360?r=3"
+            }
+          },
+          {
+            "image": {
+              "alternativeText": "Beautiful background image",
+              "url": "http://source.unsplash.com/random/360x360?r=4"
+            }
+          },
+          {
+            "image": {
+              "alternativeText": "Beautiful background image",
+              "url": "http://source.unsplash.com/random/360x360?r=5"
+            }
+          },
+          {
+            "image": {
+              "alternativeText": "Beautiful background image",
+              "url": "http://source.unsplash.com/random/360x360?r=6"
+            }
+          }
+        ],
+        "metadata": {
+          "background": true,
+          "name": "gallery3",
+          "section_id": "gallery3"
+        }
+      }
+    ],
+    "menu": {
+      "open_in_new_tab": false,
+      "logo_text": "Gallery Page",
+      "logo_link": "#home",
+      "menu": [
+        {
+          "open_in_new_tab": false,
+          "link_text": "Intro",
+          "url": "#intro"
+        },
+        {
+          "open_in_new_tab": false,
+          "link_text": "Gallery 1",
+          "url": "#gallery1"
+        },
+        {
+          "open_in_new_tab": false,
+          "link_text": "Gallery 2",
+          "url": "#gallery2"
+        },
+        {
+          "open_in_new_tab": false,
+          "link_text": "Gallery 3",
+          "url": "#gallery3"
+        }
+      ]
+    }
+  }
+]

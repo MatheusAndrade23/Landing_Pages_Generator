@@ -1,0 +1,73 @@
+[
+  {
+    "footer_text": "<p>HTML Guide of Landing Pages Generator - Matheus</p>",
+    "slug": "landing-page",
+    "title": "Landing Page",
+    "sections": [
+      {
+        "__component": "section.section-two-columns",
+        "title": "HTML Guide",
+        "description": "",
+        "metadata": {
+          "background": true,
+          "section_id": "intro"
+        },
+        "image": {
+          "url": "https://res.cloudinary.com/dlizakp2a/image/upload/v1613749289/javascript_b57bf48cda.svg"
+        }
+      },
+      {
+        "__component": "section.section-grid",
+        "description": "HTML for Absolute Beginners",
+        "title": "HTML - Build your website",
+        "text_grid": [
+          {
+            "title": "HTML for Absolute Beginners",
+            "description": "While many guides on the internet attempt to teach HTML using a lot of mind-boggling theory, this tutorial will instead focus on giving you the practical skills to build your first site. The aim is to show you ‘how’ to create your first web page without spending the entire tutorial focusing too much on the “why.” By the end of this tutorial, you will have the know-how to create a basic website and we hope that this will inspire you to delve further into the world of HTML using our follow-on guides."
+          },
+          {
+            "title": "What is HTML?",
+            "description": "Okay, so this is the only bit of mandatory theory. In order to begin to write HTML, it helps if you know what you are writing. HTML is the language in which most websites are written. HTML is used to create pages and make them functional. The code used to make them visually appealing is known as CSS and we shall focus on this in a later tutorial. For now, we will focus on teaching you how to build rather than design"
+          },
+          {
+            "title": "The History of HTML",
+            "description": "HTML was first created by Tim Berners-Lee, Robert Cailliau, and others starting in 1989. It stands for Hyper Text Markup Language. Hypertext means that the document contains links that allow the reader to jump to other places in the document or to another document altogether. The latest version is known as HTML5. A Markup Language is a way that computers speak to each other to control how text is processed and presented. To do this HTML uses two things: tags and attributes."
+          },
+          {
+            "title": "What are Tags and Attributes?",
+            "description": "Tags and attributes are the basis of HTML. They work together but perform different functions – it is worth investing 2 minutes in differentiating the two."
+          },
+          {
+            "title": "What Are HTML Tags?",
+            "description": "Tags are used to mark up the start of an HTML element and they are usually enclosed in angle brackets. An example of a tag is: Most tags must be opened and closed in order to function."
+          },
+          {
+            "title": "What are HTML Attributes?",
+            "description": "Attributes contain additional pieces of information. Attributes take the form of an opening tag and additional info is placed inside. An example of an attribute is: <img src='mydog.jpg' alt='A photo of my dog.'> In this instance, the image source (src) and the alt text (alt) are attributes of the <img> tag."
+          },
+          {
+            "title": "Golden Rules To Remember",
+            "description": "The vast majority of tags must be opened (<tag>) and closed (</tag>) with the element information such as a title or text resting between the tags. When using multiple tags, the tags must be closed in the order in which they were opened. For example: <strong><em>This is really important!</em></strong>"
+          }
+        ],
+        "metadata": {
+          "background": true,
+          "name": "Recipes Grid",
+          "section_id": "recipes-one"
+        }
+      }
+    ],
+    "menu": {
+      "open_in_new_tab": false,
+      "logo_text": "HTML Page",
+      "logo_link": "#home",
+      "menu": [
+        {
+          "open_in_new_tab": false,
+          "link_text": "Intro",
+          "url": "#intro"
+        }
+      ]
+    }
+  }
+]

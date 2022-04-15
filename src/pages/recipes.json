@@ -1,0 +1,86 @@
+[
+  {
+    "footer_text": "<p>Recipes Page of Landing Pages Generator - Matheus</p>",
+    "slug": "landing-page",
+    "title": "Landing Page",
+    "sections": [
+      {
+        "__component": "section.section-two-columns",
+        "title": "Recipes Page",
+        "description": "This page shows some recipes!",
+        "metadata": {
+          "background": true,
+          "section_id": "intro"
+        },
+        "image": {
+          "url": "https://res.cloudinary.com/dlizakp2a/image/upload/v1613749289/javascript_b57bf48cda.svg"
+        }
+      },
+      {
+        "__component": "section.section-grid",
+        "description": "How to cook a honey Mustard Glazed Ham",
+        "title": "Honey Mustard Glazed Ham",
+        "text_grid": [
+          {
+            "title": "Step 1",
+            "description": "Preheat oven to 400°F (200°C)."
+          },
+          {
+            "title": "Step 2",
+            "description": "Add the chopped onion, garlic cloves, apple cider vinegar, mustard, orange juice, and cloves to a large roasting pan, stirring to combine."
+          },
+          {
+            "title": "Step 3",
+            "description": "Place the ham on the roasting rack over the liquid."
+          },
+          {
+            "title": "Step 4",
+            "description": "Trim off tough outer skin, then score the remaining fat in a crosshatch pattern. Cover the entire roasting rack with aluminum foil and bake for 1 hour."
+          },
+          {
+            "title": "Step 5",
+            "description": "Remove the ham from the oven, and remove the foil. Baste the ham with the liquid, then remove the rack from the roasting pan and set aside."
+          },
+          {
+            "title": "Step 6",
+            "description": "Remove all the whole cloves from the remaining liquid in the pan. Pour the remaining liquid into a pot, along with the honey, Dijon mustard, Worcestershire sauce, and brown sugar. Whisk to combine."
+          },
+          {
+            "title": "Step 7",
+            "description": "Bring the mixture to a boil over medium high heat, then simmer until thick and reduced, about 10 minutes."
+          },
+          {
+            "title": "Step 8",
+            "description": "Brush the glaze on to the ham then transfer back to the roasting rack."
+          },
+          {
+            "title": "Step 9",
+            "description": "Bake the ham for 30-45 minutes, or until the glaze is caramelized and the ham reaches 145°F (65°C). Slice the ham, and serve. Enjoy!"
+          }
+        ],
+        "metadata": {
+          "background": true,
+          "name": "Recipes Grid",
+          "section_id": "recipes-one"
+        }
+      }
+    ],
+    "menu": {
+      "open_in_new_tab": false,
+      "logo_text": "Recipes Page",
+      "logo_link": "#home",
+      "menu": [
+        {
+          "open_in_new_tab": false,
+          "link_text": "Intro",
+          "url": "#intro"
+        },
+        {
+          "open_in_new_tab": false,
+          "link_text": "Recipe 1",
+          "url": "#recipes-one"
+        }
+      ]
+    }
+  }
+]
