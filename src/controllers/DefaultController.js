@@ -2,6 +2,26 @@ const mongoose = require('mongoose');
 const User = require('../models/user');
 
 module.exports = class DefaultController {
+  static ApplyPage(req, res) {
+    let pageSelected = parseInt(req.body.defaultPage);
+
+    if (pageSelected) {
+      User.findOneAndUpdate(
+        { user: req.session.login },
+        { pageSelected: pageSelected },
+        (error, user) => {
+          if (error) {
+            res.status(500).redirect('/');
+          } else {
+            res.status(200).redirect('/');
+          }
+        },
+      );
+    } else {
+      res.status(406).redirect('/');
+    }
+  }
+
   static ShowHome(req, res) {
     if (req.session.login) {
       res.render('pages/home');
@@ -58,11 +78,11 @@ module.exports = class DefaultController {
               pageSelected: 3,
             };
             try {
-              User.crate(NewUser);
+              User.create(NewUser);
               req.session.login = req.body.user;
               res.status(201).redirect('/');
             } catch (error) {
-              res.status(500).redirect('pages/register');
+              res.status(500).redirect('/register');
             }
           }
         });

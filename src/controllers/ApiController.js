@@ -2,6 +2,10 @@ const mongoose = require('mongoose');
 const User = require('../models/user');
 
 const mockPage = require('../pages/mock.json');
+const galleryPage = require('../pages/gallery.json');
+const recipesPage = require('../pages/recipes.json');
+const cssPage = require('../pages/css.json');
+const htmlPage = require('../pages/html.json');
 
 module.exports = class LoginApiController {
   static LandingPages(req, res) {
@@ -35,39 +39,39 @@ module.exports = class LoginApiController {
 const SwitchPage = (pageSelected) => {
   switch (pageSelected) {
     case 1:
-      return (page = {});
+      return (page = [...mockPage]);
       break;
 
     case 2:
-      return (page = {});
+      return (page = [...mockPage]);
       break;
 
     case 3:
-      return (page = { ...mockPage });
+      return (page = [...mockPage]);
       break;
 
     case 4:
-      return (page = {});
+      return (page = [...mockPage]);
       break;
 
     case 5:
-      return (page = {});
+      return (page = [...recipesPage]);
       break;
 
     case 6:
-      return (page = {});
+      return (page = [...galleryPage]);
       break;
 
     case 7:
-      return (page = {});
+      return (page = [...htmlPage]);
       break;
 
     case 8:
-      return (page = {});
+      return (page = [...cssPage]);
       break;
 
     case 9:
-      return (page = {});
+      return (page = []);
       break;
   }
 };
