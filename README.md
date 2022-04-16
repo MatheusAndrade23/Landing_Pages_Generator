@@ -1,7 +1,7 @@
 <h1 align="center" id="introducao">Landing Pages Generator</h1>
 
 
-<h3 align="center">Com Theme Switcher! É um gerador de landing pages que monta uma página à escolha do usuário.</h3>
+<h3 align="center">É um gerador de landing pages que monta uma página à escolha do usuário.</h3>
 
 #### O projeto é constituído de duas páginas: O gerador (o repositório em que você está) e a página <a href="">(este repositório aqui)</a>. O gerador (NodeJS) envia um arquivo JSON que contem todas as informações da página a ser montada para o Front-End (ReactJS), que, por sua vez, as interpreta e renderiza a página. 
  
@@ -68,6 +68,7 @@ _<h3 id="trocando">Trocando Páginas! 🚀</h3>_
  <div style="display: inline_block"><br>
   <img align="center" alt="HTML" height="35" width="45" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
   <img align="center" alt="CSS" height="35" width="45" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  <img align="center" alt="Sass" height="35" width="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg">
   <img align="center" alt="Js" height="35" width="45" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
   <img align="center" alt="MongoDB" height="35" width="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain.svg">
   <img align="center" alt="ReactJS" height="35" width="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
