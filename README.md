@@ -21,10 +21,11 @@
 - <a href="#demo">Demonstração</a>
   - <a href="#tour">Um pequeno tour pelo Projeto</a>
   - <a href="#trocando">Trocando Páginas</a>
+  - <a href="#mensagens">Mensagens</a>
 - <a href="#tecnologias">Tecnologias Utilizadas</a>
 - <a href="#storybook">Storybook</a>
 - <a href="#testes">Testes com Jest</a>
-- <a href="#detalhes">Detalhes do Funcionamento do Projeto</a>
+- <a href="#detalhes">Alguns Detalhes do Funcionamento do Projeto</a>
   - <a href="#front">FrontEnd</a>
   - <a href="#back">BackEnd</a>
   - <a href="#json">Resposta JSON</a>
@@ -52,6 +53,8 @@ _<h3 id="tour">Um pequeno tour pelo Projeto! 🚀</h3>_
 _<h3 id="trocando">Trocando Páginas! 🚀</h3>_
 
 <img src="/github/trocando.gif">
+
+_<h3 id="mensagens">Mensagens! 🚀</h3>_
 
 <br>
 
@@ -101,7 +104,7 @@ _<h3 id="trocando">Trocando Páginas! 🚀</h3>_
 
 <h2 id="storybook">Storybook 📚</h2>
 
-### O <a href="https://storybook.js.org/">Storybook</a> é uma biblioteca React que ajuda muito no processo de desenvolvimento de uma página. Ele te permite visualizar e manipular totalmente um componente qualquer de seu interesse apenas com a execução de um comando: `npm run storybook`. Veja uma demonstração de como foi utilizado nesse projeto!
+#### O <a href="https://storybook.js.org/">Storybook</a> é uma biblioteca React que ajuda muito no processo de desenvolvimento de uma página. Ele te permite visualizar e manipular totalmente um componente qualquer de seu interesse apenas com a execução de um comando: `npm run storybook`. Veja uma demonstração de como foi utilizado nesse projeto!
 
 <br>
 
@@ -113,13 +116,13 @@ _<h3 id="trocando">Trocando Páginas! 🚀</h3>_
 
 <h2 id="testes">Testes com Jest 🧪</h2>
 
-### <a href="https://jestjs.io/pt-BR/">Jest</a> é um poderoso Framework que te permite testar totalmente seus projetos JavaScript. Para isso, escreva testes automatizados e execute-os com o comand: `npm test`. Assim, é mostrado no terminal o relatório dos testes, e quando algum deles falha, é exibido exatamente o que deu errado e o porquê. Foi mais uma das coisas que eu aprendi com o desenvolvimento do LP Generator!
+#### <a href="https://jestjs.io/pt-BR/">Jest</a> é um poderoso Framework que te permite testar totalmente seus projetos JavaScript. Para isso, escreva testes automatizados e execute-os com o comand: `npm test`. Assim, é mostrado no terminal o relatório dos testes, e quando algum deles falha, é exibido exatamente o que deu errado e o porquê. Foi mais uma das coisas que eu aprendi com o desenvolvimento do LP Generator!
 
 <br>
 
 <img src="/github/testes.gif">
 
-### Você também pode gerar um relatório de como está a cobertura do seus testes com o comando: `npm test -- --watchAll="false" --coverage`. Acredite, é muito satisfário ver uma cobertura de 100%!
+#### Você também pode gerar um relatório de como está a cobertura do seus testes com o comando: `npm test -- --watchAll="false" --coverage`. Acredite, é muito satisfário ver uma cobertura de 100%!
 
 <br>
 
@@ -129,13 +132,54 @@ _<h3 id="trocando">Trocando Páginas! 🚀</h3>_
 
 ---
 
-<h2 id="detalhes">Detalhes do Funcionamento do Projeto 🔎</h2>
+<h2 id="detalhes">Alguns Detalhes do Funcionamento do Projeto 🔎</h2>
 
 _<h3 id="front">FrontEnd <img align="center" alt="ReactJS" height="35" width="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"></h3>_
 
+#### O FrontEnd foi desenvolvido com Storybook, Jest e Styled Components. Pela primeira vez fiz arquivos separados para temas, configurações e funções.
+
+#### Os avisos que está página pode apresentar são muito interessantes. Eles são divididos por códigos, em que cada um deles pode represetar uma mensagem de sucesso ou de erro. Segue uma tabela que mostra todos os códigos possíveis.
+
+<table>
+  <thead>
+    <th>Código:</th>
+    <th>Mensagem:</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WHP1</td>
+      <td>Without User or Password</td>
+    </tr>
+    <tr>
+      <td>ISE1</td>
+      <td>Internal Server Error</td>
+    </tr>
+    <tr>
+      <td>WPU1</td>
+      <td>Wrong Password</td>
+    </tr>
+    <tr>
+      <td>UNF1</td>
+      <td>User not Found</td>
+    </tr>
+  </tbody>
+</table>
+
+##
+
 _<h3 id="back">BackEnd <img align="center" alt="NodeJS" height="35" width="45" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg"></h3>_
 
+#### O BackEnd foi desenvolvido utilizando a arquitetura MVC (Models, Views e Controllers) com o Handlebars para template engine e Mongoose para bancos de dados. Esta arquitetura ajuda deixar o código mais limpo e organizado.
+
+##
+
 _<h3 id="json">Resposta JSON <img align="center" alt="NodeJS"  width="45" src="https://www.free-emoticons.com/files/halloween-emoticons/8579.png"></h3>_
+
+#### O JSON que configura uma página é estruturado em seções. Algumas estão por padrão em todas as páginas, como as que configuram o menu e o rodapé, já outras variam de acordo com a página a ser montada. Assim, para renderizar a página, as funções da pasta "Api" (FrontEnd) desestruturam o JSON e passam as informações necessárias para os componentes certos.
+
+#### Os tipos de seções são: `section-two-columns`, `section-grid-text`, `section-grid-image`, `section-content`.
+
+#### Cada uma das seções devem conter as informações necessárias para sua construção, como títulos, descrições, imagens e etc.
 
 <br>
 
