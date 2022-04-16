@@ -17,6 +17,7 @@
 <h2>Menu de Navegação</h2>
 
 - <a href="#introducao">Introdução</a>
+- <a href="#funcionamento">Como Funciona?</a>
 - <a href="#demo">Demonstração</a>
   - <a href="#tour">Um pequeno tour pelo Projeto</a>
   - <a href="#trocando">Trocando Páginas</a>
@@ -28,6 +29,15 @@
   - <a href="#back">BackEnd</a>
   - <a href="#json">Resposta JSON</a>
 - <a href="#footer">Rodapé</a>
+
+<br>
+
+---
+
+<h2 id="funcionamento">Como Funciona? ❓</h2>
+
+<h3>O usuário escolhe a página que será gerada no gerador, que fica salva no banco de dados. Depois, abre o FrontEnd e faz o login com seu usuário e, como uma truque de mágica, a página escolhida é renderizada. Veja melhor no próximo tópico!</h3>
+
 
 <br>
 
@@ -91,6 +101,10 @@ _<h3 id="trocando">Trocando Páginas! 🚀</h3>_
 
 <h2 id="storybook">Storybook 📚</h2>
 
+### O <a href="https://storybook.js.org/">Storybook</a> é uma biblioteca React que ajuda muito no processo de desenvolvimento de uma página. Ele te permite visualizar e manipular totalmente um componente qualquer de seu interesse apenas com a execução de um comando: `npm run storybook`. Veja uma demonstração de como foi utilizado nesse projeto!
+
+<br>
+
 <img src="/github/storybook.gif">
 
 <br>
@@ -99,7 +113,15 @@ _<h3 id="trocando">Trocando Páginas! 🚀</h3>_
 
 <h2 id="testes">Testes com Jest 🧪</h2>
 
+### <a href="https://jestjs.io/pt-BR/">Jest</a> é um poderoso Framework que te permite testar totalmente seus projetos JavaScript. Para isso, escreva testes automatizados e execute-os com o comand: `npm test`. Assim, é mostrado no terminal o relatório dos testes, e quando algum deles falha, é exibido exatamente o que deu errado e o porquê. Foi mais uma das coisas que eu aprendi com o desenvolvimento do LP Generator!
+
+<br>
+
 <img src="/github/testes.gif">
+
+### Você também pode gerar um relatório de como está a cobertura do seus testes com o comando: `npm test -- --watchAll="false" --coverage`. Acredite, é muito satisfário ver uma cobertura de 100%!
+
+<br>
 
 <img src="/github/coverage.png">
 
