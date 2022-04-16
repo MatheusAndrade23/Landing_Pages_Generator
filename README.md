@@ -6,7 +6,7 @@
 
 <h3 align="center">É um gerador de landing pages que monta uma página à escolha do usuário.</h3>
 
-#### O projeto é constituído de duas páginas: O gerador (o repositório em que você está) e a página <a href="">(este repositório aqui)</a>. O gerador (NodeJS) envia um arquivo JSON que contem todas as informações da página a ser montada para o Front-End (ReactJS), que, por sua vez, as interpreta e renderiza a página.
+#### O projeto é constituído de duas páginas: O gerador (o repositório em que você está) e a página <a href="https://github.com/MatheusAndrade23/Landing_Pages">(clique para ver o código)</a>. O gerador (NodeJS) envia um arquivo JSON que contem todas as informações da página a ser montada para o Front-End (ReactJS), que, por sua vez, as interpreta e renderiza a página.
 
 <br>
 
@@ -39,7 +39,6 @@
 
 <h3>O usuário escolhe a página que será gerada no gerador, que fica salva no banco de dados. Depois, abre o FrontEnd e faz o login com seu usuário e, como uma truque de mágica, a página escolhida é renderizada. Veja melhor no próximo tópico!</h3>
 
-
 <br>
 
 ---
@@ -55,6 +54,8 @@ _<h3 id="trocando">Trocando Páginas! 🚀</h3>_
 <img src="/github/trocando.gif">
 
 _<h3 id="mensagens">Mensagens! 🚀</h3>_
+
+<img src="/github/mensagens.gif">
 
 <br>
 
@@ -171,6 +172,12 @@ _<h3 id="back">BackEnd <img align="center" alt="NodeJS" height="35" width="45" s
 
 #### O BackEnd foi desenvolvido utilizando a arquitetura MVC (Models, Views e Controllers) com o Handlebars para template engine e Mongoose para bancos de dados. Esta arquitetura ajuda deixar o código mais limpo e organizado.
 
+<br>
+
+<img src="/github/mvc.gif">
+
+<br>
+
 ##
 
 _<h3 id="json">Resposta JSON <img align="center" alt="NodeJS"  width="45" src="https://www.free-emoticons.com/files/halloween-emoticons/8579.png"></h3>_
@@ -180,6 +187,10 @@ _<h3 id="json">Resposta JSON <img align="center" alt="NodeJS"  width="45" src="h
 #### Os tipos de seções são: `section-two-columns`, `section-grid-text`, `section-grid-image`, `section-content`.
 
 #### Cada uma das seções devem conter as informações necessárias para sua construção, como títulos, descrições, imagens e etc.
+
+<br>
+
+<img src="/github/json.gif">
 
 <br>
 
