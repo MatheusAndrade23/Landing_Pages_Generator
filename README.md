@@ -1,7 +1,9 @@
 <h1 align="center" id="introducao">Landing Pages Generator</h1>
 
-<img src="/github/logo.png" align="center"/>
-
+<div align="center">
+ <img src="/github/logo.png" width="500px"/>
+</div>
+  
 <h3 align="center">É um gerador de landing pages que monta uma página à escolha do usuário.</h3>
 
 #### O projeto é constituído de duas páginas: O gerador (o repositório em que você está) e a página <a href="">(este repositório aqui)</a>. O gerador (NodeJS) envia um arquivo JSON que contem todas as informações da página a ser montada para o Front-End (ReactJS), que, por sua vez, as interpreta e renderiza a página.
