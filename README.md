@@ -113,4 +113,4 @@ _<h3 id="json">Resposta JSON <img align="center" alt="NodeJS"  width="45" src="h
 
 ---
 
-<p id="footer" align="center">Rodapé</p>
+<div id="footer" align="center"><a href="https://www.linkedin.com/in/matheus-andrade23/"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a></div>
