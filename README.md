@@ -1,10 +1,11 @@
 <h1 align="center" id="introducao">Landing Pages Generator</h1>
 
+<img src="/github/logo.png" align="center"/>
 
 <h3 align="center">É um gerador de landing pages que monta uma página à escolha do usuário.</h3>
 
-#### O projeto é constituído de duas páginas: O gerador (o repositório em que você está) e a página <a href="">(este repositório aqui)</a>. O gerador (NodeJS) envia um arquivo JSON que contem todas as informações da página a ser montada para o Front-End (ReactJS), que, por sua vez, as interpreta e renderiza a página. 
- 
+#### O projeto é constituído de duas páginas: O gerador (o repositório em que você está) e a página <a href="">(este repositório aqui)</a>. O gerador (NodeJS) envia um arquivo JSON que contem todas as informações da página a ser montada para o Front-End (ReactJS), que, por sua vez, as interpreta e renderiza a página.
+
 <br>
 
 ---
@@ -13,18 +14,18 @@
 
 <h2>Menu de Navegação</h2>
 
-* <a href="#introducao">Introdução</a>
-* <a href="#demo">Demonstração</a>
-  * <a href="#tour">Um pequeno tour pelo Projeto</a>
-  * <a href="#trocando">Trocando Páginas</a>
-* <a href="#tecnologias">Tecnologias Utilizadas</a>
-* <a href="#storybook">Storybook</a>
-* <a href="#testes">Testes com Jest</a>
-* <a href="#detalhes">Detalhes do Funcionamento do Projeto</a>
-  * <a href="#front">FrontEnd</a>
-  * <a href="#back">BackEnd</a>
-  * <a href="#json">Resposta JSON</a>
-* <a href="#footer">Rodapé</a>
+- <a href="#introducao">Introdução</a>
+- <a href="#demo">Demonstração</a>
+  - <a href="#tour">Um pequeno tour pelo Projeto</a>
+  - <a href="#trocando">Trocando Páginas</a>
+- <a href="#tecnologias">Tecnologias Utilizadas</a>
+- <a href="#storybook">Storybook</a>
+- <a href="#testes">Testes com Jest</a>
+- <a href="#detalhes">Detalhes do Funcionamento do Projeto</a>
+  - <a href="#front">FrontEnd</a>
+  - <a href="#back">BackEnd</a>
+  - <a href="#json">Resposta JSON</a>
+- <a href="#footer">Rodapé</a>
 
 <br>
 
@@ -34,17 +35,16 @@
 
 _<h3 id="tour">Um pequeno tour pelo Projeto! 🚀</h3>_
 
-
 _<h3 id="trocando">Trocando Páginas! 🚀</h3>_
 
 <br>
 
 ---
-  
+
 <h2 id="tecnologias">Tecnologias Utilizadas ⚙️</h2>
- 
- #### FrontEnd: `ReactJS!`
-	
+
+#### FrontEnd: `ReactJS!`
+
 - React-Dom
 - React-Router-Dom
 - Styled Components
@@ -52,9 +52,9 @@ _<h3 id="trocando">Trocando Páginas! 🚀</h3>_
 - Proptypes
 - Storybook
 - React Hooks
-	
- #### BackEnd: `NodeJS!`
-	
+
+#### BackEnd: `NodeJS!`
+
 - Express
 - Express-Handlebars
 - Express-Session
@@ -62,9 +62,9 @@ _<h3 id="trocando">Trocando Páginas! 🚀</h3>_
 - Nodemon
 - DotEnv
 - Cors
- 	
- #### Banco de Dados: `MongoDB-Atlas!`
- 
+
+#### Banco de Dados: `MongoDB-Atlas!`
+
  <div style="display: inline_block"><br>
   <img align="center" alt="HTML" height="35" width="45" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
   <img align="center" alt="CSS" height="35" width="45" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
@@ -78,11 +78,11 @@ _<h3 id="trocando">Trocando Páginas! 🚀</h3>_
   <img align="center" alt="Express" height="35" width="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg">
   <img align="center" alt="Handlebars" height="35" width="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/handlebars/handlebars-original.svg">
  </div>
- 
+
  <br>
- 
+
 ---
- 
+
 <h2 id="storybook">Storybook 📚</h2>
 
 <br>
@@ -99,7 +99,7 @@ _<h3 id="trocando">Trocando Páginas! 🚀</h3>_
 
 _<h3 id="front">FrontEnd <img align="center" alt="ReactJS" height="35" width="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"></h3>_
 
-_<h3 id="back">BackEnd  <img align="center" alt="NodeJS" height="35" width="45" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg"></h3>_
+_<h3 id="back">BackEnd <img align="center" alt="NodeJS" height="35" width="45" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg"></h3>_
 
 _<h3 id="json">Resposta JSON <img align="center" alt="NodeJS"  width="45" src="https://www.free-emoticons.com/files/halloween-emoticons/8579.png"></h3>_
 
