@@ -35,7 +35,11 @@
 
 _<h3 id="tour">Um pequeno tour pelo Projeto! 🚀</h3>_
 
+<img src="/github/tour.gif">
+
 _<h3 id="trocando">Trocando Páginas! 🚀</h3>_
+
+<img src="/github/trocando.gif">
 
 <br>
 

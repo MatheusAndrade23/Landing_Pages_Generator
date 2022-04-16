@@ -2,7 +2,7 @@
   {
     "_id": "602fdf2d540c00269e056171",
     "published_at": "2021-02-19T15:54:33.499Z",
-    "footer_text": "<p>Melhorado por Matheus Andrade</p>",
+    "footer_text": "<p>By Matheus Andrade</p>",
     "slug": "landing-page",
     "title": "Landing Page",
     "sections": [
@@ -551,7 +551,7 @@
         "ext": ".svg",
         "mime": "image/svg+xml",
         "size": 2.51,
-        "url": "https://res.cloudinary.com/dlizakp2a/image/upload/v1613748744/landing_page_2_f7da938739.svg",
+        "url": "",
         "provider_metadata": {
           "public_id": "landing_page_2_f7da938739",
           "resource_type": "image"
