@@ -163,6 +163,10 @@ _<h3 id="front">FrontEnd <img align="center" alt="ReactJS" height="35" width="45
       <td>UNF1</td>
       <td>User not Found</td>
     </tr>
+    <tr>
+      <td>LRS1</td>
+      <td>Success</td>
+    </tr>
   </tbody>
 </table>
 
