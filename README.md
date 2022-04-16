@@ -3,7 +3,7 @@
 <div align="center">
  <img src="/github/logo.png" width="500px"/>
 </div>
-  
+
 <h3 align="center">É um gerador de landing pages que monta uma página à escolha do usuário.</h3>
 
 #### O projeto é constituído de duas páginas: O gerador (o repositório em que você está) e a página <a href="">(este repositório aqui)</a>. O gerador (NodeJS) envia um arquivo JSON que contem todas as informações da página a ser montada para o Front-End (ReactJS), que, por sua vez, as interpreta e renderiza a página.
@@ -91,11 +91,17 @@ _<h3 id="trocando">Trocando Páginas! 🚀</h3>_
 
 <h2 id="storybook">Storybook 📚</h2>
 
+<img src="/github/storybook.gif">
+
 <br>
 
 ---
 
 <h2 id="testes">Testes com Jest 🧪</h2>
+
+<img src="/github/testes.gif">
+
+<img src="/github/coverage.png">
 
 <br>
 
@@ -113,4 +119,5 @@ _<h3 id="json">Resposta JSON <img align="center" alt="NodeJS"  width="45" src="h
 
 ---
 
-<div id="footer" align="center"><a href="https://www.linkedin.com/in/matheus-andrade23/"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a></div>
+<div id="footer" align="center"><a href="https://www.linkedin.com/in/matheus-andrade23/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+<a href = "mailto:matheusandrade.ma2003@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a></div>
