@@ -117,7 +117,7 @@ _<h3 id="mensagens">Mensagens! 🚀</h3>_
 
 <h2 id="testes">Testes com Jest 🧪</h2>
 
-#### <a href="https://jestjs.io/pt-BR/">Jest</a> é um poderoso Framework que te permite testar totalmente seus projetos JavaScript. Para isso, escreva testes automatizados e execute-os com o comand: `npm test`. Assim, é mostrado no terminal o relatório dos testes, e quando algum deles falha, é exibido exatamente o que deu errado e o porquê. Foi mais uma das coisas que eu aprendi com o desenvolvimento do LP Generator!
+#### <a href="https://jestjs.io/pt-BR/">Jest</a> é um poderoso Framework que te permite testar totalmente seus projetos JavaScript. Para isso, escreva testes automatizados e execute-os com o comando: `npm test`. Assim, é mostrado no terminal o relatório dos testes, e quando algum deles falha, é exibido exatamente o que deu errado e o porquê. Foi mais uma das coisas que eu aprendi com o desenvolvimento do LP Generator!
 
 <br>
 
